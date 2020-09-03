@@ -1,10 +1,17 @@
 {
   "hosting": {
-    "public": "dist/angular-tour-of-heroes",
+    "site": "itxcc-ng-shop",
+    "public": "dist/ng-app",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
